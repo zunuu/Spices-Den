@@ -1,3 +1,28 @@
-.header {
-    /* min-height: 100vh; */
+.brandname {
+    font-size: 35px;
+    padding: 0 !important;
+    background-color: transparent !important;
+    color: rgb(59, 42, 3);
+
+}
+
+.brandname:hover {
+    color: rgb(95, 3, 3) !important;
+
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(94, 64, 0);
+    font-weight: 600;
+    padding: 15px 10px;
+    transition: 0.5s;
+}
+
+.header a :hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(68, 14, 14, 0.733);
+    border-radius: 50%;
+
 }
