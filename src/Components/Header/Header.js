@@ -10,7 +10,7 @@ const Header = () => {
             <Navbar collapseOnSelect expand="lg" bg="dark bg-opacity-25" variant="dark">
                 <Container>
                     <Navbar.Brand href="#home">
-                        <Link className='brandname' to='/'><strong className='brandname'>Spices-</strong><span className='brandname'>Den</span></Link>
+                        <Link className='brandname' to='/'><strong className='brandname'>Spices🌶️</strong><span className='brandname'>Den</span></Link>
                     </Navbar.Brand>
                     <Navbar.Toggle className='bg-success bg-opacity-75 border-0 px-3 py-2' aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -20,7 +20,7 @@ const Header = () => {
                             </Nav.Link>
 
 
-                            <Nav.Link href="#services">
+                            <Nav.Link href="#inventory">
                                 <Link className="  mx-2 " to='/inventory'>Inventory</Link>
                             </Nav.Link>
 
@@ -33,7 +33,7 @@ const Header = () => {
                             </Nav.Link>
 
 
-                            <Nav.Link href="#aboutme">
+                            <Nav.Link href="#signIn">
                                 <Link className=" mx-2 " to='/signIn'>Sign In</Link>
                             </Nav.Link>
 
