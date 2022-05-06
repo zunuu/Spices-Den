@@ -1,0 +1,7 @@
+.advertising {
+    height: 340px;
+    background-image: url(../../../../Images/image.png);
+    /* background-color: aliceblue; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}

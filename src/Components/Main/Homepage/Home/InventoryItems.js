@@ -3,7 +3,10 @@ import React from 'react';
 const InventoryItems = () => {
     return (
         <div>
-            <h1>this is 6 inventory items</h1>
+            <h1>Inventory Items</h1>
+            <div>
+
+            </div>
         </div>
     );
 };
