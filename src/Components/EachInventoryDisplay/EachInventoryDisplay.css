@@ -1,7 +1,7 @@
 .card-of-inventory {
     border-radius: 40px !important;
     border: none !important;
-    background-color: rgba(94, 3, 3, 0.938) !important;
+    background-color: rgba(94, 3, 3, 0.932) !important;
     color: white;
 }
 
@@ -17,7 +17,37 @@
     border-bottom-left-radius: 40px;
 }
 
+.card-descrip {
+    height: 80px;
+    font-weight: 400;
+    font-size: 12px;
+}
 
+.descrip {
+    font-size: 18px;
+}
+
+.stockbtn {
+    border: none;
+    border-radius: 30px;
+    padding: 3px 10px;
+    background-color: white;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.stockbtn:hover {
+    color: white;
+    background-color: rgb(3, 3, 3);
+}
+
+.quantity {
+    border-radius: 80px;
+}
+
+.suppliername {
+    height: 30px;
+}
 
 
 

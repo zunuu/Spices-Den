@@ -1,0 +1,14 @@
+li {
+    display: block;
+}
+
+.brandName {
+    /* border-bottom: 2px solid white;
+    border-bottom-left-radius: 80%; */
+}
+
+li span {
+    color: rgb(255, 255, 255);
+    padding-right: 5px;
+    text-align: center;
+}
