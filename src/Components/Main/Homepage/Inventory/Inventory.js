@@ -9,14 +9,13 @@ const Inventory = () => {
     const [inventory, setInventory] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/inventory/62767aac23354bf88a4804c6`;
+        const url = `https://desolate-meadow-44441.herokuapp.com/inventory/${_id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setInventory(data));
     }, [])
 
-    // const { _id, name, supplierName, image, image2, description, price, quantity
-    // } = props.eachInventoryDisplay;
+
 
 
     const navigate = useNavigate();
@@ -82,7 +81,7 @@ const Inventory = () => {
                             </div>
                         </div>
                         <button
-                            onClick={() => navigateToManageInventory(_id)} className='stockbtn mt-3 w-100'>Manage Inventories</button>
+                            onClick={() => navigateToManageInventory()} className='stockbtn mt-3 w-100'>Manage Inventories</button>
 
                     </Card.Body>
 
