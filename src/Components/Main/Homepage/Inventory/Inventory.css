@@ -1,0 +1,96 @@
+.inventoryId {
+    background-color: rgba(255, 101, 101, 0.253);
+
+}
+
+.inventory-card-div {
+    min-height: 1500px;
+}
+
+.card-inventory-image2 {
+    height: 450px;
+    border-radius: 40px;
+    border: none !important;
+}
+
+.card-of-inventory2 {
+    border-radius: 40px !important;
+    border: none !important;
+    background-color: rgba(51, 0, 0, 0.932) !important;
+    color: white;
+}
+
+
+
+.card-body-of-inventory2 {
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.card-descrip2 {
+    height: 140px;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.descrip2 {
+    font-size: 20px;
+    text-align: left !important;
+    text-shadow: none;
+
+}
+
+.stockbtn2 {
+    border: none;
+    border-radius: 30px;
+    padding: 3px 10px;
+    background-color: white;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.delivered {
+    padding: 24px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(55, 55, 245);
+    color: white;
+    font-weight: 700;
+    font-size: 19px;
+    transition: 0.5s;
+}
+
+.delivered:hover {
+
+    background-color: rgb(75, 75, 75);
+    color: white;
+    font-weight: 700;
+}
+
+.stockbtn2:hover {
+    color: white;
+    background-color: rgb(3, 3, 3);
+}
+
+.quantity2 {
+    border-radius: 120px;
+}
+
+.suppliername2 {
+    height: 35px;
+    border-radius: 120px;
+    background-color: rgb(56, 11, 11);
+
+}
+
+.sold {
+    border-radius: 120px;
+    background-color: darkslategray;
+}
+
+/* indicator disable */
+.carousel-indicators {
+    width: 0px;
+    height: 0px;
+}

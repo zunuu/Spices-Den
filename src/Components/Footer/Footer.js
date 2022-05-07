@@ -32,9 +32,9 @@ const Footer = () => {
                 </div>
             </div>
             <div className='col-xl-2'>
-                <h2 className='brandName fs-5'>Spices🌶️Den</h2>
+                <h2 className='brandName fs-5'>Spices<span className='fs-1'>🌶️</span>Den</h2>
             </div>
-            <small className='text-muted'>&copy;2022 Copyright Spicesden.com</small>
+            <small className='text-muted'>&copy;2022 Copyright Spices-den.com</small>
         </div>
     );
 };
