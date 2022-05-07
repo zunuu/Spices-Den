@@ -25,17 +25,9 @@ const Inventory = () => {
         // console.log(`/inventory/${_id}`);
     }
     return (
-        <div className='inventoryId'>
-            this is inventory detail:{_id}
-            {/* {inventory.name}{inventory.supplierName},
-
-            {inventory.image} */}
-
-
-
-
-            <div className=' col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-2 mx-auto justify-content-center inventory-card-div'>
-                <Card className='shadow-lg card-of-inventory mx-auto justify-content-center' style={{ width: '30rem' }}>
+        <div className='inventoryId p-5 m-0'>
+            <div className=' my-2 mx-auto justify-content-center inventory-card-div'>
+                <Card className='shadow-lg card-of-inventory mx-auto justify-content-center' style={{ width: '20rem' }}>
                     <Carousel fade controls={false}>
 
                         <Carousel.Item interval={2000}>
@@ -71,18 +63,21 @@ const Inventory = () => {
                         </Card.Text>
                         <div className='d-flex row align-items-center justify-content-center'>
                             <div className='col-8'>
-                                <Card.Text className='bg-info w-100 bg-opacity-50 quantity2'>
-                                    Price: {inventory.price}
+                                <Card.Text className='p-1 fs-6 bg-info w-100 bg-opacity-50 quantity2'>
+                                    <small> Price: {inventory.price}</small>
 
                                 </Card.Text>
-                                <Card.Text className='bg-warning w-100 bg-opacity-50 quantity2'>
-                                    Quantity: {inventory.quantity}
+                                <Card.Text className='p-1 fs-6 bg-warning w-100 bg-opacity-50 quantity2'>
+                                    <small>Quantity: {inventory.quantity}</small>
                                 </Card.Text>
-                                <Card.Text className='fs-4 text-muted w-100 bg-opacity-50 sold'>
+                                <Card.Text className='p-1 ProductID bg-primary w-100 bg-opacity-50 quantity2'>
+                                    <small>Product ID: {inventory._id}</small>
+                                </Card.Text>
+                                <Card.Text className='p-1 fs-4 text-muted w-100 bg-opacity-50 sold'>
                                     Sold: {inventory.sold}
                                 </Card.Text>
                             </div>
-                            <div className='col-4 mx-auto'>
+                            <div className='col-4 mx-auto '>
                                 <button onClick={() => navigateToManageInventory(_id)} className='delivered'>Delivered</button>
                             </div>
                         </div>
