@@ -1,7 +1,8 @@
 .card-of-inventory {
-    border-radius: 40px;
+    border-radius: 40px !important;
     border: none !important;
-    background-color: rgba(255, 0, 0, 0.555);
+    background-color: rgba(94, 3, 3, 0.938) !important;
+    color: white;
 }
 
 .card-inventory-image {
@@ -14,4 +15,14 @@
 .card-body-of-inventory {
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
+}
+
+
+
+
+
+/* indicator disable */
+.carousel-indicators {
+    width: 0px;
+    height: 0px;
 }
