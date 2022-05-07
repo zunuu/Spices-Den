@@ -20,8 +20,8 @@ const Header = () => {
                             </Nav.Link>
 
 
-                            <Nav.Link href="#inventory">
-                                <Link className="  mx-2 " to='/inventory'>Inventory</Link>
+                            <Nav.Link href="#manageInventory">
+                                <Link className="  mx-2 " to='/manageInventory'>Manage Inventory</Link>
                             </Nav.Link>
 
 
