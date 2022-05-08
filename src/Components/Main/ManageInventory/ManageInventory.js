@@ -1,6 +1,7 @@
 
 import React from 'react';
 import EachInventoryDisplay from '../../EachInventoryDisplay/EachInventoryDisplay';
+import EachManageInventory from '../../EachManageInventory/EachManageInventory';
 import InventoryHooks from '../../Hooks/InventoryHook';
 import './ManageInventory.css'
 const ManageInventory = () => {
@@ -9,10 +10,10 @@ const ManageInventory = () => {
         <div className='d-flex  row'>
             {
                 eachInventory.map(eachInventoryDisplay =>
-                    <EachInventoryDisplay key={eachInventoryDisplay._id} eachInventoryDisplay={eachInventoryDisplay} >
+                    <EachManageInventory key={eachInventoryDisplay._id} eachInventoryDisplay={eachInventoryDisplay} >
 
 
-                    </EachInventoryDisplay>)
+                    </EachManageInventory>)
             }
         </div>
     );

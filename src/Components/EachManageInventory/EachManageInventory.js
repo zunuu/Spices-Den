@@ -1,11 +1,10 @@
 import React from 'react';
 import { Card, Carousel } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import './EachInventoryDisplay.css'
-const EachInventoryDisplay = (props) => {
+
+const EachManageInventory = (props) => {
     const { _id, name, supplierName, image, image2, description, price, quantity
     } = props.eachInventoryDisplay;
-    // console.log(_id);
     const navigate = useNavigate();
     const navigateToInventory = (_id) => {
         navigate(`/inventory/${_id}`)
@@ -56,10 +55,10 @@ const EachInventoryDisplay = (props) => {
                     </Card.Text>
                     <button onClick={() => navigateToInventory(_id)} className='stockbtn'>Stock Update</button>
                 </Card.Body>
-                {/* <button className='{EachInventoryDisplay.delete-btn}'>delete</button> */}
+                <button className='{EachInventoryDisplay.delete-btn}'>delete</button>
             </Card>
         </div>
     );
 };
 
-export default EachInventoryDisplay;
+export default EachManageInventory;
