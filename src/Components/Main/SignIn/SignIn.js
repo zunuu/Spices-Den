@@ -1,15 +1,19 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
 const SignIn = () => {
 
     const emailRef = useRef('')
     const passwordRef = useRef('')
-
+    const navigate = useNavigate();
     const handleSubmit = event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        console.log(email, password);
+        console.log("paisi");
+    }
+    const navigateRegister = event => {
+        navigate('/register');
     }
 
 
@@ -19,7 +23,9 @@ const SignIn = () => {
             <Form onSubmit={handleSubmit} className='container w-50 '>
                 <Form.Group className="mb-3 " controlId="formBasicEmail">
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
-
+                    <Form.Text className="text-muted">
+                        We'll never share your email with anyone else.
+                    </Form.Text>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -30,11 +36,10 @@ const SignIn = () => {
                 <Button variant="primary" className=' w-100' type="submit">
                     Login
                 </Button> <br /> { } &nbsp;
-
-                <p className='fw-bold mt-3'>new to Spices-Den? <span >
-
-
-                </span></p>
+                <Button variant="success" className='mt-1 mb-4 w-100' type="submit" >
+                    Sign In With Google
+                </Button>
+                <p className='fw-bold mt-3'>New to Spices-Den? <Link to="/register" className='text-danger text-decoration-none' onClick={navigateRegister}>Please Sign Up</Link></p>
 
             </Form>
 

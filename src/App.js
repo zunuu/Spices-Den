@@ -8,6 +8,7 @@ import SignIn from './Components/Main/SignIn/SignIn';
 import NotFound from './Components/NotFound/NotFound';
 import ManageInventory from './Components/Main/ManageInventory/ManageInventory';
 import Inventory from './Components/Main/Homepage/Inventory/Inventory';
+import Register from './Components/Main/Register/Register';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/inventory/:_id" element={<Inventory></Inventory>}></Route>
         <Route path="/manageInventory" element={<ManageInventory></ManageInventory>}></Route>
         <Route path="/signIn" element={<SignIn></SignIn>}></Route>
+        <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
