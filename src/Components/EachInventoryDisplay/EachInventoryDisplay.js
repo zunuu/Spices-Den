@@ -12,7 +12,7 @@ const EachInventoryDisplay = (props) => {
         // console.log(`/inventory/${_id}`);
     }
     return (
-        <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-2 mx-auto justify-content-center'>
+        <div className=' col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-4 mx-auto justify-content-center'>
             <Card className='card-of-inventory mx-auto justify-content-center' style={{ width: '18rem' }}>
                 <Carousel fade controls={false}>
 
@@ -56,7 +56,7 @@ const EachInventoryDisplay = (props) => {
                     </Card.Text>
                     <button onClick={() => navigateToInventory(_id)} className='stockbtn'>Stock Update</button>
                 </Card.Body>
-
+                <button className='{EachInventoryDisplay.delete-btn}'>delete</button>
             </Card>
         </div>
     );

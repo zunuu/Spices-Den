@@ -16,11 +16,11 @@ const Homepage = () => {
     return (
 
 
-        <div className='homepage'>
+        <div className='homepage bg-success bg-opacity-10'>
             <Banner></Banner>
             <InventoryItems></InventoryItems>
 
-            <section className='container mx-auto pt-5 d-flex row justify-content-center  my-5'>
+            <section className='container mx-auto pt-5 d-flex row justify-content-center bg-success bg-opacity-10 pt-0 pb-5 my-0'>
 
                 {
                     eachInventory.slice(0, 6).map(eachInventoryDisplay =>
