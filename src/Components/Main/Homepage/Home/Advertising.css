@@ -5,3 +5,38 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.customerNumber {
+    font-size: 180px;
+    color: black;
+    font-family: sans-serif;
+}
+
+.million,
+.grow-business {
+    color: black;
+    font-weight: 600;
+    font-family: sans-serif;
+
+}
+
+.background-advert {
+    background-color: rgba(255, 255, 255, 0.322);
+    height: 340px;
+
+}
+
+.startsNow {
+    background-color: rgb(63, 156, 156);
+    height: 140px;
+    color: white;
+
+}
+
+.startsNowBtn {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: teal;
+    margin-top: 5px;
+}

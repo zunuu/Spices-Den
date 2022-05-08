@@ -1,3 +1,14 @@
 .homepage {
     min-height: 110vh;
 }
+
+.manage-inventory-btn {
+    transition: 0.5s;
+    border: none;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+
+.manage-inventory-btn:hover {
+    border-radius: 30px;
+}

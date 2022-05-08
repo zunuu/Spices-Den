@@ -2,8 +2,17 @@ import React from 'react';
 import './Footer.css'
 const Footer = () => {
     return (
-        <div className='align-items-center d-flex bg-dark text-white row justify-content-center mx-auto'>
+        <div className='align-items-center d-flex bg-dark text-white row justify-content-center mx-auto pt-4 pb-4'>
+            <div>
+                <p>
+                    Send us email to get weekly Newsletter
 
+                </p>
+                <form className='mb-4' action="">
+                    <input className='formInput' type="email" name="" id="" />
+                    <button className='formBtn' type="submit">Submit</button>
+                </form>
+            </div>
             <div className='col-xl-9'>
                 <div className='d-flex bg-dark text-white row justify-content-center mx-auto text-start'>
                     <div className='col-xl-4 col-lg-6 col-sm-12 col-12 mx-auto justify-content-center my-3'>

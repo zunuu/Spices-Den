@@ -12,3 +12,22 @@ li span {
     padding-right: 5px;
     text-align: center;
 }
+
+.formBtn,
+.formInput {
+    border: none;
+    padding: 10px 10px !important;
+    margin-right: 7px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.formBtn:hover {
+
+    border-radius: 20px;
+}
+
+.formInput:hover {
+
+    border-radius: 20px;
+}

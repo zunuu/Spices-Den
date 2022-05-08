@@ -5,6 +5,7 @@ import InventoryHooks from '../../Hooks/InventoryHook';
 import Advertising from './Home/Advertising';
 import Banner from './Home/Banner';
 import InventoryItems from './Home/InventoryItems';
+import OurServices from './Home/OurServices';
 import './Homepage.css'
 const Homepage = () => {
     const [eachInventory, setEachInventory] = InventoryHooks()
@@ -26,8 +27,9 @@ const Homepage = () => {
                     eachInventory.slice(0, 6).map(eachInventoryDisplay =>
                         <EachInventoryDisplay key={eachInventoryDisplay._id} eachInventoryDisplay={eachInventoryDisplay} ></EachInventoryDisplay>)
                 }
-                <button onClick={() => navigateToManageInventory()} className='mt-4'>Manage Inventory</button>
+                <button onClick={() => navigateToManageInventory()} className='mt-4 manage-inventory-btn'>Manage Inventory</button>
             </section>
+            <OurServices></OurServices>
             <Advertising></Advertising>
         </div>
     );
