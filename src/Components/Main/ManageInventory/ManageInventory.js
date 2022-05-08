@@ -7,7 +7,7 @@ import './ManageInventory.css'
 const ManageInventory = () => {
     const [eachInventory, setEachInventory] = InventoryHooks()
     return (
-        <div className='d-flex  row'>
+        <div className='d-flex m-0 p-0 row'>
             {
                 eachInventory.map(eachInventoryDisplay =>
                     <EachManageInventory key={eachInventoryDisplay._id} eachInventoryDisplay={eachInventoryDisplay} >

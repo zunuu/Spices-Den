@@ -9,6 +9,7 @@ import NotFound from './Components/NotFound/NotFound';
 import ManageInventory from './Components/Main/ManageInventory/ManageInventory';
 import Inventory from './Components/Main/Homepage/Inventory/Inventory';
 import Register from './Components/Main/Register/Register';
+import RequireAuth from './Components/Main/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
         <Route path="/" element={<Homepage></Homepage>}></Route>
         <Route path="/home" element={<Homepage></Homepage>}></Route>
 
-        <Route path="/inventory/:_id" element={<Inventory></Inventory>}></Route>
+        <Route path="/inventory/:_id" element={<RequireAuth>
+          <Inventory></Inventory>
+        </RequireAuth>}></Route>
         <Route path="/manageInventory" element={<ManageInventory></ManageInventory>}></Route>
         <Route path="/signIn" element={<SignIn></SignIn>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>

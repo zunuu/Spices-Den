@@ -2,6 +2,8 @@
 
 Live link: (https://spices-den.web.app/)
 
+## Details
+This project build with `React`, `firebase`, `react router`, `node`, `express`, `mongodb` etc. This is Inventory Management website. Here authorised company/users can stock their item in the warehouse as well as they can package them for onboardin with transport also. user can add,manage,organize and delete their items also.For general audience interactions their is contact information also. 
 
 # Insights
 ## This Project is about a Inventory Management System

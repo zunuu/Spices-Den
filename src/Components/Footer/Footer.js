@@ -40,8 +40,8 @@ const Footer = () => {
 
                 </div>
             </div>
-            <div className='col-xl-2'>
-                <h2 className='brandName fs-5'>Spices<span className='fs-1'>🌶️</span>Den</h2>
+            <div className='col-xl-2 brandNameFooter'>
+                <h2 className='brandName '>Spices<span className='fs-2'>🌶️</span>Den</h2>
             </div>
             <small className='text-muted'>&copy;2022 Copyright Spices-den.com</small>
         </div>

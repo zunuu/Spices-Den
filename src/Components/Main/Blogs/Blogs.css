@@ -1,0 +1,11 @@
+.blogs {
+    border-radius: 5px;
+    transition: 1s;
+    margin-top: 30px;
+    color: white;
+    padding: 40px 20px;
+}
+
+.blogs:hover {
+    border-radius: 80px;
+}

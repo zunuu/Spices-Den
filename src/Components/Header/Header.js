@@ -39,11 +39,21 @@ const Header = () => {
                                 <Link className=" mx-2 " to='/blogs'>Blogs</Link>
                             </Nav.Link>
 
+
                             {
                                 user ?
-                                    <Nav.Link href="#signOut">
-                                        <Link onClick={handleSignOut} className=" mx-2 " to='/signOut'>Sign Out</Link>
-                                    </Nav.Link>
+                                    <div className='d-flex'>
+                                        < Nav.Link href="#signOut">
+                                            <Link onClick={handleSignOut} className=" mx-2 " to='/signOut'>Sign Out</Link>
+                                        </Nav.Link>
+                                        <Nav.Link href="#myItems">
+                                            <Link onClick={handleSignOut} className=" mx-2 " to='/myItems'>My Items</Link>
+                                        </Nav.Link>
+                                        <Nav.Link href="#signOut">
+                                            <Link onClick={handleSignOut} className=" mx-2 " to='/signOut'>Manage Items</Link>
+                                        </Nav.Link>
+                                    </div>
+
                                     :
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Carousel } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-
+import './EachManageInventory.css'
 const EachManageInventory = (props) => {
     const { _id, name, supplierName, image, image2, description, price, quantity
     } = props.eachInventoryDisplay;
@@ -53,9 +53,11 @@ const EachManageInventory = (props) => {
                     <Card.Text className='bg-warning w-100 bg-opacity-50 quantity'>
                         Quantity: {quantity}
                     </Card.Text>
-                    <button onClick={() => navigateToInventory(_id)} className='stockbtn'>Stock Update</button>
+                    <button onClick={() => navigateToInventory(_id)} className='stockbtn mb-2'>Stock Update</button>
+                    <br />
+                    <button className='{mt-5 p-2 rounded eachdeletebtn}'>Delete</button>
                 </Card.Body>
-                <button className='{EachInventoryDisplay.delete-btn}'>delete</button>
+
             </Card>
         </div>
     );

@@ -16,7 +16,7 @@
     color: rgb(94, 64, 0);
     font-weight: 600;
     padding: 15px 10px;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .header a :hover {

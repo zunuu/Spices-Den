@@ -26,6 +26,12 @@ const SignIn = () => {
     const navigateRegister = event => {
         navigate('/register');
     }
+    if (user) {
+        navigate(from, { replace: true });
+    }
+    // if (!user) {
+    //     navigate('/signIn')
+    // }
 
 
     return (
