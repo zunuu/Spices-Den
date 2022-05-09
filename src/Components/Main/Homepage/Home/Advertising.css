@@ -39,4 +39,24 @@
     color: white;
     background-color: teal;
     margin-top: 5px;
+    transition: 0.5s;
+}
+
+.startsNowBtn:hover {
+    border: none;
+    border-radius: 20px;
+
+    background-color: rgb(100, 226, 226);
+}
+
+.startNow {
+    text-decoration: none;
+    transition: 0.5s;
+    color: white;
+    padding: 10px;
+}
+
+.startNow:hover {
+    text-decoration: none;
+    color: black;
 }

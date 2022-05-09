@@ -4,8 +4,9 @@ const Footer = () => {
     return (
         <div className='align-items-center d-flex bg-dark text-white row justify-content-center mx-auto pt-4 pb-4'>
             <div>
+                <h4>LET'S STAY IN TOUCH</h4>
                 <p>
-                    Send us email to get weekly Newsletter
+                    <small>Send your email to get weekly Newsletter</small>
 
                 </p>
                 <form className='mb-4' action="">
@@ -43,6 +44,7 @@ const Footer = () => {
             <div className='col-xl-2 brandNameFooter'>
                 <h2 className='brandName '>Spices<span className='fs-2'>🌶️</span>Den</h2>
             </div>
+            <hr className='w-100 text-white' />
             <small className='text-muted'>&copy;2022 Copyright Spices-den.com</small>
         </div>
     );

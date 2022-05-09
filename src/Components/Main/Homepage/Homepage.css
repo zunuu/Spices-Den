@@ -7,8 +7,13 @@
     border: none;
     padding: 15px 10px;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 .manage-inventory-btn:hover {
     border-radius: 30px;
+}
+
+.inventory-items {
+    border-radius: 40px;
 }

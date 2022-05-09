@@ -30,10 +30,12 @@
 .stockbtn {
     border: none;
     border-radius: 30px;
-    padding: 3px 10px;
-    background-color: white;
+    /* padding: 3px 10px; */
+    background-color: transparent;
     font-weight: 600;
     transition: 0.5s;
+    text-decoration: none;
+    color: black;
 }
 
 .stockbtn:hover {

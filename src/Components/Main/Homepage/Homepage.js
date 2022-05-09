@@ -17,17 +17,17 @@ const Homepage = () => {
     return (
 
 
-        <div className='homepage bg-success bg-opacity-10'>
+        <div className='homepage mx-0 px-0 bg-success bg-opacity-10'>
             <Banner></Banner>
             <InventoryItems></InventoryItems>
 
-            <section className='container mx-auto pt-5 d-flex row justify-content-center bg-success bg-opacity-10 pt-0 pb-5 my-0'>
+            <section className='container inventory-items mx-auto pt-5 d-flex row justify-content-center bg-success bg-opacity-10 pt-0 pb-5 my-0'>
 
                 {
                     eachInventory.slice(0, 6).map(eachInventoryDisplay =>
                         <EachInventoryDisplay key={eachInventoryDisplay._id} eachInventoryDisplay={eachInventoryDisplay} ></EachInventoryDisplay>)
                 }
-                <button onClick={() => navigateToManageInventory()} className='mt-4 manage-inventory-btn'>Manage Inventory</button>
+                <button onClick={() => navigateToManageInventory()} className='mt-4 manage-inventory-btn '>Manage Inventory</button>
             </section>
             <OurServices></OurServices>
             <Advertising></Advertising>

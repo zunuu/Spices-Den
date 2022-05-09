@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Carousel } from 'react-bootstrap';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
+// import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import './Inventory.css'
+import auth from '../../../../firebase.init';
 const Inventory = () => {
 
     const { _id } = useParams();
@@ -16,13 +18,21 @@ const Inventory = () => {
     }, [])
 
 
-
+    // const [
+    //     signInWithEmailAndPassword,
+    //     user,
+    //     loading,
+    //     error,
+    // ] = useSignInWithEmailAndPassword(auth);
 
     const navigate = useNavigate();
     const navigateToManageInventory = () => {
         navigate('/manageInventory')
         // console.log(`/inventory/${_id}`);
     }
+    // if (user) {
+    //     navigate('/inventory/:_id')
+    // }
     return (
         <div className='inventoryId p-5 m-0'>
             <div className=' my-2 mx-auto justify-content-center inventory-card-div'>
@@ -77,11 +87,14 @@ const Inventory = () => {
                                 </Card.Text>
                             </div>
                             <div className='col-4 mx-auto '>
-                                <button onClick={() => navigateToManageInventory(_id)} className='delivered'>Delivered</button>
+                                <button
+                                    // onClick={() => navigateToManageInventory(_id)} 
+                                    className='delivered'>Delivered</button>
                             </div>
                         </div>
                         <button
-                            onClick={() => navigateToManageInventory()} className='stockbtn mt-3 w-100'>Manage Inventories</button>
+                            onClick={() => navigateToManageInventory()}
+                            className='stockbtn mt-3 w-100'> Manage Inventories</button>
 
                     </Card.Body>
 
