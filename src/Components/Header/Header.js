@@ -50,7 +50,7 @@ const Header = () => {
                                             <Link onClick={handleSignOut} className=" mx-2 " to='/myItems'>My Items</Link>
                                         </Nav.Link>
                                         <Nav.Link href="#signOut">
-                                            <Link onClick={handleSignOut} className=" mx-2 " to='/signOut'>Manage Items</Link>
+                                            <Link onClick={handleSignOut} className=" mx-2 " to='/myItems'>Manage Items</Link>
                                         </Nav.Link>
                                     </div>
 
